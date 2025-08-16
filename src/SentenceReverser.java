@@ -8,19 +8,19 @@ public class SentenceReverser {
         String temp = "";
         String ans = "";
 
-        for(int i=0;i<=str.length()-1;i++)
+        for(int i=0;i<=str.length()-1;i++)     //checks individual String
         {
-            if(str.charAt(i)!=' ')
+            if(str.charAt(i)!=' ')             //checks till a ' ' and then saves that those String in temp
             {
                 temp+=str.charAt(i);
             }
             else
             {
-                ans =  temp + " " + ans;
-                temp="";
+                ans =  temp + " " + ans;       //if Space is found then saves it on ans with a ' ' at the Front
+                temp="";                       //Resets temp
             }
         }
-        ans = temp + " " + ans;
+        ans = temp + " " + ans;                //the last word in input is saved in ans for the last time to avoid error
         System.out.print(ans);
     }
 }
