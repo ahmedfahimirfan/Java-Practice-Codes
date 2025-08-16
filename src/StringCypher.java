@@ -11,7 +11,7 @@ public class StringCypher {
         String str_input = sc.next();
         if(str_input.equals("E"))
         {
-            for (int i = 0; i <= str.length() - 1; i++)
+            for (int i = 0; i <= str.length() - 1; i++)                 //checks individual String and shifts them according to the key.
             {
                 int encrypt_ascii = (int) str.charAt(i) + key;
                 char encrypt_char = (char) encrypt_ascii;
@@ -21,7 +21,7 @@ public class StringCypher {
         }
         else if (str_input.equals("D"))
         {
-            for (int i = 0; i <= str.length() - 1; i++)
+            for (int i = 0; i <= str.length() - 1; i++)                 //checks individual String and shifts
             {
                 int encrypt_ascii = (int) str.charAt(i) - key;
                 char encrypt_char = (char) encrypt_ascii;
